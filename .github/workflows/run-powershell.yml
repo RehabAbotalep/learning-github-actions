@@ -1,7 +1,7 @@
 name: Run PowerShell Script
 run-name: Run PowerShell Script
 on:
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   Run-Script:
     runs-on: windows-latest
