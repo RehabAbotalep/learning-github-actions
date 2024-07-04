@@ -9,7 +9,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
     - name: Make the script excutable
-      run: chmod +x /source/scripts/hello-world.sh
+      run: chmod +x source/scripts/hello-world.sh
     - name: Run the script
       shell: bash
       run: ./source/scripts/hello-world.sh
