@@ -1,0 +1,13 @@
+name: Run PowerShell Script
+run-name: Run PowerShell Script
+on:
+  workflow_dispatch
+jobs:
+  Run-Script:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Run the script
+      shell: pwsh
+      run: ./source/scripts/hello-world.ps1
