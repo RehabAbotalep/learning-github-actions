@@ -1,0 +1,15 @@
+name: Run Bash Script
+run-name: Run Bash
+on:
+  workflow_dispatch:
+jobs:
+  Run-Bash:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Make the script excutable
+      run: chmod +x hello-world.sh
+    - name: Run the script
+      shell: bash
+      run: ./source/scripts/hello-world.sh
