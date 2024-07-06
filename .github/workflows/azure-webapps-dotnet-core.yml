@@ -36,7 +36,7 @@ jobs:
 
     defaults: 
       run:
-        working-directory: /source/aspnetcoreapp
+        working-directory: ./source/aspnetcoreapp
 
     steps:
       - uses: actions/checkout@v4
