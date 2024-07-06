@@ -6,6 +6,8 @@ jobs:
   Simple-Script:
     runs-on: self-hosted
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Echo Hello World
         run: echo "Hello World"
   
