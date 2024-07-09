@@ -1,0 +1,20 @@
+name: Conditional env variable
+
+on:
+  workflow_dispatch:
+
+env:
+  DAY_OF_WEEK: Tuesday
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Good morning
+    steps:
+      - name: "Say Good morning"
+        if: ${{env.DAY_OF_WEEK == 'Tuesday'}}
+        run: echo "$Greeting $Name. Today is $DAY_OF_WEEK!"
+        env:
+          Name: Rehab
+    
