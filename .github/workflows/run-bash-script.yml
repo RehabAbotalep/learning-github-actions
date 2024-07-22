@@ -1,0 +1,13 @@
+name: Run Bash Script
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-bash-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Run the script
+        run: ./source/scripts/hello-world.sh
