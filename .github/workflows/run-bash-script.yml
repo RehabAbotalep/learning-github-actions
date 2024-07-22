@@ -9,5 +9,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Set executable permissions for the script
+        run: chmod +x ./source/scripts/hello-world.sh
       - name: Run the script
         run: ./source/scripts/hello-world.sh
