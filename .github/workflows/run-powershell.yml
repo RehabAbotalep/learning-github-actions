@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Run the script
       shell: pwsh
-      run: ${{ github.action_path }}/source/scripts/hello-world.ps1
+      run: ./source/scripts/hello-world.ps1
