@@ -9,15 +9,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20' # Match your local version
-
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./.github/actions/hello-world-javascript-action
-
       - name: Run Hello World Action
         uses: ./.github/actions/hello-world-javascript-action  # Path to your JS action
         with:
