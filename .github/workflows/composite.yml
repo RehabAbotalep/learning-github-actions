@@ -1,3 +1,5 @@
+name: "Use Composite Action"
+
 on: [push]
 
 jobs:
@@ -7,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: RehabAbotalep/learning-github-actions@V1
+        uses: RehabAbotalep/learning-github-actions@v1
         with:
           who-to-greet: 'Rehab Ragab'
