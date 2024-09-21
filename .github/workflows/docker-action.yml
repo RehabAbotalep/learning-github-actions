@@ -1,9 +1,6 @@
 name: "Greeting Docker Workflow"
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   greet-job:
