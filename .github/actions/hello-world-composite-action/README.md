@@ -10,6 +10,8 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 ## Example usage
 
+```
 uses: ./.github/actions/hello-world-composite-action 
 with:
   who-to-greet: 'Rehab Ragab'
+```
