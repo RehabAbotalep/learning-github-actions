@@ -1,6 +1,6 @@
 name: "Greeting JavaScript Action"
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   greet-job:
