@@ -1,11 +1,14 @@
-# Container image that runs your code
+# Use an Alpine Linux image
 FROM alpine:3.10
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
+# Install bash since Alpine uses a minimal shell by default
+RUN apk add --no-cache bash
+
+# Copy the entrypoint script into the Docker container
 COPY entrypoint.sh /entrypoint.sh
 
 # Make the script executable
 RUN chmod +x /entrypoint.sh
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
+# Specify the script to run as the container's entry point
 ENTRYPOINT ["/entrypoint.sh"]
