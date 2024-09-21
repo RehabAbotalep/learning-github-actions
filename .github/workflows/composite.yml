@@ -1,0 +1,18 @@
+name: "Greeting Workflow"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Hello World Action
+        uses: ./.github/actions  # Use the action directly from the 'actions' folder
+        with:
+          who-to-greet: 'GitHub User'  # Provide an input for the greeting
