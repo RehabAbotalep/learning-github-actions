@@ -1,0 +1,10 @@
+name: "Call Reusable Workflow"
+
+on:
+  workflow_dispatch 
+
+jobs:
+  use-reusable-workflow:
+    uses: RehabAbotalep/learning-github-actions/.github/workflows/reusable-greeting.yml@main  
+    with:
+      name: "Rehab Ragab" 
