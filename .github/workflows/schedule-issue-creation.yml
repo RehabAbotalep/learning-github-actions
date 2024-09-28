@@ -35,7 +35,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           TITLE: Team sync
           ASSIGNEES: RehabAbotalep
-          LABELS: weekly sync,docs-team
+          LABELS: weekly sync
           BODY: |
             ### Agenda
 
