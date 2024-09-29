@@ -1,0 +1,23 @@
+name: Matrix Workflow Example
+
+on: workflow_dispatch
+
+jobs:
+  example_matrix:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Set up Node.js ${{ matrix.version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.version }}
+
+      - name: Display Node.js version and OS
+        run: |
+          echo "Node.js Version: $(node -v)"
+          echo "Operating System: $(uname -a || ver)"
