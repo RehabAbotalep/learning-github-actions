@@ -1,6 +1,6 @@
 # learning-github-actions
 
-This repository is a collection of GitHub Actions and workflows to demonstrate various features and capabilities of GitHub Actions. It includes examples of composite actions, Docker-based actions, and JavaScript-based actions.
+This repository is a collection of GitHub Actions and workflows to demonstrate various features and capabilities of GitHub Actions. It includes examples of workflows, composite actions, Docker-based actions, and JavaScript-based actions.
 
 ## Overview
 
